@@ -845,6 +845,8 @@ address {
   margin-bottom: 12px;
 }
 
+/* Форма модалки */
+
 .form-field {
   position: relative;
 }
@@ -995,6 +997,8 @@ address {
   background-position: 50% 50%;
   background-origin: border-box;
 }
+
+/* Форма в футере */
 
 .subscribe-block {
   margin-left: auto;
