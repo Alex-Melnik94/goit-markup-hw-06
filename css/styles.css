@@ -508,10 +508,7 @@ img {
 .footer-blocks {
   display: flex;
   align-items: baseline;
-}
-
-.contacts-block {
-  margin-right: 70px;
+  justify-content: space-between;
 }
 
 .footer .logo {
@@ -889,25 +886,6 @@ address {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.checkbox-label {
-  font-weight: 400;
-  line-height: 1.71;
-
-  color: var(--primary-text-color);
-  margin-left: 8px;
-}
-
-.checkbox-link {
-  color: var(--accent-color);
-  text-decoration-skip-ink: none;
-}
-
-.checkbox-fied {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .input-icon-container {
   position: relative;
   width: 100%;
@@ -955,11 +933,27 @@ address {
   position: relative;
 }
 
-.checkbox-label {
-  padding-left: 25px;
-  margin: 0;
-  position: relative;
+.checkbox-link {
+  color: var(--accent-color);
+  text-decoration-skip-ink: none;
 }
+
+.checkbox-fied {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-label {
+  padding-left: 24px;
+  position: relative;
+  font-weight: 400;
+  line-height: 1.71;
+
+  color: var(--primary-text-color);
+}
+
 .checkbox-label:before {
   content: '';
   position: absolute;
@@ -977,6 +971,12 @@ address {
   transition-duration: var(--animation-timing);
   transition-timing-function: var(--cubic-bezier);
 }
+
+.checkbox-fied:hover .checkbox-label:before,
+.checkbox-fied:focus-within .checkbox-label:before {
+  border-color: var(--accent-color);
+}
+
 .checkbox-fied input:checked + .checkbox-label:before {
   border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
@@ -999,10 +999,6 @@ address {
 }
 
 /* Форма в футере */
-
-.subscribe-block {
-  margin-left: auto;
-}
 
 .subscribe-title {
   margin-bottom: 20px;
