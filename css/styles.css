@@ -687,13 +687,13 @@ address {
   border-bottom: 1px solid var(--item-border-color);
   border-left: 1px solid var(--item-border-color);
   padding: 20px 24px 20px 24px;
-  width: 370px;
 }
 
 .works-list .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  /* width: 370px; */
 }
 
 .works-list .item:nth-child(3n) {
