@@ -646,7 +646,7 @@ address {
   background-color: var(--white-color);
 }
 
-.item-border .title {
+.card-title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -657,7 +657,7 @@ address {
   letter-spacing: 0.06em;
 }
 
-.works-list .text {
+.card-text {
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -693,7 +693,6 @@ address {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* width: 370px; */
 }
 
 .works-list .item:nth-child(3n) {
@@ -780,7 +779,7 @@ address {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
+  padding: 40px;
 
   background-color: var(--white-color);
   border-radius: 4px;
@@ -821,14 +820,6 @@ address {
   outline: none;
 }
 
-.form-container {
-  width: 448px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -844,7 +835,7 @@ address {
 /* Форма модалки */
 
 .form-field {
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .form-name {
@@ -865,11 +856,14 @@ address {
   padding: 12px 42px;
 }
 
+.comment-field {
+  margin-bottom: 20px;
+}
+
 .form-comment {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
 
   resize: none;
 }
@@ -888,7 +882,6 @@ address {
   position: relative;
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
 }
 
 .input-icon {
